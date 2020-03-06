@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Add Post 
+{% endblock title %}
+
+{% block content %}
+
+
+<form method='POST'>
+
+    {{ form.hidden_tag() }}
+    {{ form.title.label }} {{ form.title }}
+    {{ form.author.label }} {{ form.author }}
+    {{ form.created.label }} {{ form.created }}
+    {{ form.body.label }} {{ form.body }}
+    {{ form.updated.label }} {{ form.updated }}
+
+    {{ form.submit() }}
+
+ 
+</form>
+
+{% endblock content %}
